@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import StudiosReducer from './studios_reducer';
-import ActiveStudioReducer from './active_studio_reducer';
+import studiosReducer from './studios_reducer';
+import activeStudioReducer from './active_studio_reducer';
 
 const rootReducer = combineReducers({
-  studios: StudiosReducer,
-  activeStudio: ActiveStudioReducer
+  studios: studiosReducer,
+  activeStudio: activeStudioReducer
 })
 
 export default rootReducer;
