@@ -1,5 +1,5 @@
 
-const state = {
+export default {
   studios: [{
     "name": "ABC Yoga",
     "phone": "212-555-5555"
@@ -15,5 +15,3 @@ const state = {
     "phone": "347-374-0938"
   }
 }
-
-export default state;

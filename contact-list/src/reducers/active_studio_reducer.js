@@ -1,4 +1,3 @@
-import state from '../state/state';
 
 function activeStudioReducer (state = null, action) {
   switch (action.type) {
