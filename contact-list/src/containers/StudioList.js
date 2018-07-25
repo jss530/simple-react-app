@@ -22,10 +22,16 @@ class StudioList extends Component {
   }
 }
 
-function mapStatetoProps(state) {
+function mapStateToProps(state) {
   return {
     studios: state.studios
   };
 }
 
-export default connect(mapStatetoProps())(StudioList);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({
+    selectStudio: selectStudio
+  }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(StudioList);
