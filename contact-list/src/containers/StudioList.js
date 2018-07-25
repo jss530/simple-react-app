@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import selectStudio from '../actions/select_studio';
-import getStudios from '../actions/get_studios';
 import { bindActionCreators } from 'redux';
 
 class StudioList extends Component {

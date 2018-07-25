@@ -1,6 +1,4 @@
-import DEFAULT from "../state/state";
-
-function activeStudioReducer (state = DEFAULT, action) {
+function activeStudioReducer (state = null, action) {
   switch (action.type) {
 
     case 'STUDIO_SELECTED':

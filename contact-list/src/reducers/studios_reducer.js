@@ -1,7 +1,5 @@
 
-import DEFAULT from "../state/state";
-
-function studiosReducer (state = DEFAULT, action) {
+function studiosReducer (state = null, action) {
   switch (action.type) {
 
     case 'GET_STUDIOS':
