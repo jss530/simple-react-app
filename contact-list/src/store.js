@@ -4,6 +4,7 @@ import {
   combineReducers
 } from 'redux';
 import thunk from 'redux-thunk';
+import DEFAULT from './state/state';
 
 import activeStudio from './reducers/active_studio_reducer';
 import studios from './reducers/studios_reducer';
