@@ -14,4 +14,4 @@ export default {
     "name": "Jewel Yoga",
     "phone": "347-374-0938"
   }
-}
+};
