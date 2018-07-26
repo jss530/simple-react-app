@@ -1,5 +1,5 @@
 
-const DEFAULT = {
+const INITIAL = {
   studios: [{
     "name": "ABC Yoga",
     "phone": "212-555-5555"
@@ -16,7 +16,7 @@ const DEFAULT = {
   }
 };
 
-function studiosReducer (state = DEFAULT, action) {
+function studiosReducer (state = INITIAL, action) {
   switch (action.type) {
 
     case 'GET_STUDIOS':

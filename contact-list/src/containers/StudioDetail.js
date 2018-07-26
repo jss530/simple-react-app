@@ -14,7 +14,7 @@ class StudioDetail extends Component {
           <h3>Studio details for: {this.props.studio.name} </h3>
           <div>Phone: {this.props.studio.phone}</div>
         </div>
-      )  ;
+      );
     }
   }
 }
