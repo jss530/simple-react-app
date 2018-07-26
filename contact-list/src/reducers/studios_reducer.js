@@ -1,5 +1,17 @@
+const DEFAULT: {
+  studios: [{
+    "name": "ABC Yoga",
+    "phone": "212-555-5555"
+  }, {
+    "name": "Pure Yoga",
+    "phone": "212-123-4567"
+  }, {
+    "name": "Mindful Studio",
+    "phone": "212-345-6724"
+  }]
+};
 
-function studiosReducer (state = null, action) {
+function studiosReducer (state = DEFAULT, action) {
   switch (action.type) {
 
     case 'GET_STUDIOS':

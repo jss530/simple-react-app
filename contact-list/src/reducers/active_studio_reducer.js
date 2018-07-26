@@ -1,3 +1,4 @@
+
 function activeStudioReducer (state = null, action) {
   switch (action.type) {
 
