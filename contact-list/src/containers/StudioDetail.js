@@ -1,7 +1,12 @@
 // import React, {Component} from 'react';
 // import { connect } from 'react-redux';
+// import { getStudios } from '../actions/get_studios';
 //
 // class StudioDetail extends Component {
+//
+//   componentDidMount() {
+//   this.props.getSuppliers()
+//   }
 //
 //   render() {
 //     if(!this.props.studio) {
@@ -21,8 +26,8 @@
 //
 // function mapStateToProps(state) {
 //   return (
-//     studio: state.activeStudio
+//     studio: state.studios.activeStudio
 //   );
 // }
 //
-// export default connect(mapStateToProps)(StudioDetail);
+// export default connect(mapStateToProps, { getStudios })(StudioDetail);
