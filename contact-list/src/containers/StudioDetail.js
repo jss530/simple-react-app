@@ -1,33 +1,30 @@
-// import React, {Component} from 'react';
-// import { connect } from 'react-redux';
-// import { getStudios } from '../actions/get_studios';
-//
-// class StudioDetail extends Component {
-//
-//   componentDidMount() {
-//   this.props.getSuppliers()
-//   }
-//
-//   render() {
-//     if(!this.props.studio) {
-//       return (
-//         <div>Select a studio from the list to see its details</div>
-//       );
-//     } else {
-//       return (
-//         <div>
-//           <h3>Studio details for: {this.props.studio.name} </h3>
-//           <div>Phone: {this.props.studio.phone}</div>
-//         </div>
-//       );
-//     }
-//   }
-// }
-//
-// function mapStateToProps(state) {
-//   return (
-//     studio: state.studios.activeStudio
-//   );
-// }
-//
-// export default connect(mapStateToProps, { getStudios })(StudioDetail);
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+
+class StudioDetail extends Component {
+
+  render() {
+    const { studios } = this.props;
+
+    if(!studios.activeStudio) {
+      return (
+        <div>Select a studio from the list to see its details</div>
+      );
+    } else {
+      return (
+        <div>
+          <h3>Studio details for: {studios.activeStudio.name} </h3>
+          <div>Phone: {studios.activeStudio.phone}</div>
+        </div>
+      );
+    }
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    studios: state.studios
+  };
+}
+
+export default connect(mapStateToProps)(StudioDetail);
