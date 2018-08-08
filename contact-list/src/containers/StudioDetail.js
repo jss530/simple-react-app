@@ -6,7 +6,7 @@ class StudioDetail extends Component {
   render() {
     const { studios } = this.props;
 
-    if(!studios.activeStudio) {
+    if(!studios.studios.activeStudio) {
       return (
         <div>Select a studio from the list to see its details</div>
       );

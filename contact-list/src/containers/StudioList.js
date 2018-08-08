@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import activeStudioReducer from '../actions/select_studio';
 import { bindActionCreators } from 'redux';
 import selectStudio from '../actions/select_studio';
 
@@ -14,21 +13,22 @@ class StudioList extends Component {
 
     return studios.studios.map((studio) => {
       return (
-          <div>
             <li key={studio.id} onClick={() => this.props.selectStudio(studio)} className='list-item'>{studio.name}
-            <br></br>
-            Phone number: {studio.phone}</li>
-            <br></br>
-          </div>
+              <br></br>
+              Phone number: {studio.phone}
+              <br></br>
+            </li>
       );
     });
   }
 
   render() {
     return (
-        <ol className='studio-list'>
-          {this.renderList()}
-        </ol>
+        <div>
+          <ol className='studio-list'>
+            {this.renderList()}
+          </ol>
+        </div>
     );
   }
 }
