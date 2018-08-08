@@ -40,9 +40,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({
-    selectStudio: selectStudio
-  }, dispatch);
+  return bindActionCreators({selectStudio: selectStudio}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(StudioList);

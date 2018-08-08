@@ -23,7 +23,7 @@ class StudioDetail extends Component {
 
 function mapStateToProps(state) {
   return {
-    studios: state.studios
+    studios: state.activeStudio
   };
 }
 

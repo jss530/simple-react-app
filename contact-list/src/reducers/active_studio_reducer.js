@@ -15,7 +15,7 @@ const INITIAL = {
   }
 };
 
-function activeStudioReducer (state = INITIAL, action) {
+export default function(state = null, action) {
   switch (action.type) {
 
     case 'STUDIO_SELECTED':
@@ -25,5 +25,3 @@ function activeStudioReducer (state = INITIAL, action) {
       return state;
   }
 }
-
-export default activeStudioReducer;
