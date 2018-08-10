@@ -13,7 +13,7 @@ class StudioList extends Component {
 
     return studios.studios.map((studio) => {
       return (
-            <li key={studio.id} onClick={() => this.props.selectStudio(studio)} className='list-item'>{studio.name}
+            <li key={studio.id} onClick={() => this.selectStudio()} className='list-item'>{studio.name}
               <br></br>
               Phone number: {studio.phone}
               <br></br>

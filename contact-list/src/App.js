@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import List from './containers/StudioList';
+import Detail from './containers/StudioDetail';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
           <h1 className="App-title">Yoga Studios List</h1>
         </header>
         <List />
+        <Detail />
       </div>
     );
   }
